@@ -1,22 +1,69 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+header {
+    background: #272822;
+}
 
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    header .second {
+        height: 100px;
+    }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    header .second {
+        height: 200px;
+    }
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    header .second {
+        height: 250px;
+    }
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    header .second {
+        height: 300px;
+    }
+}
 
+header .second {
+    margin: 0;
+    padding: 0;
 
+    background: url('../img/programming.gif') no-repeat bottom center;
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+}
 
+.mainheading {
+    font-weight: bold;
+}
 
+header .mainheading a,
+header .mainheading a:hover,
+header .mainheading a:visited {
+    text-decoration: none;
 
+    color: #82b400;
+}
 
+header .mainheading {
+    text-align: center;
 
+    color: #82b400;
+}
 
+.floatleft {
+    float: left;
+}
 
-
-
-
-
-
-
+.clearfix {
+    clear: both;
+}
